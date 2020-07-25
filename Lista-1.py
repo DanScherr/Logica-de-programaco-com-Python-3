@@ -1,7 +1,6 @@
 # Lista 1  //  1st List
 
-# Dados dois números, imprima o maior
-# Given two numbers, print the biggest
+#  1 - Given two numbers, print the biggest
 def maior_de_dois(a,b):
     iguais = (a==b)
     maior = (a>b)
@@ -13,8 +12,8 @@ def maior_de_dois(a,b):
     else:
         return b
 
-#Dados dois números, checar se são diferentes. Se forem, imprimir qual o número maior e qual o número menor.
-#Given 2 numbers, check if they are diferent. If they are, print the biggest and the lowest.
+
+#  2 - Given 2 numbers, check if they are diferent. If they are, print the biggest and the lowest.
 def checarDiferenca_maior_menor(a,b):
     diferentes = (a!=b)
     maior = (a>b)
@@ -26,14 +25,14 @@ def checarDiferenca_maior_menor(a,b):
     else:
         return "Os números digitados são iguais."
 
-#Imprimir todos os números inteiros de 1 a 10
-#Print the integer number from 1 to 10
+
+#  3 - Print the integer number from 1 to 10
 def contagem10():
     for i in range(1,10+1):
         print (i)
 
-#Dada uma lista, somar os números
-#Given a lista, sum the numbers
+
+#  4 - Given a lista, sum the numbers
 def somaLista():
     N = 0
     soma = 0
@@ -46,8 +45,8 @@ def somaLista():
             return soma
             break
 
-#Dada uma razao de PA e dois números limites, imprimir todos os numeros da PA entre os limites
-#Print a arithmetic progression
+
+#  5 - Print a arithmetic progression
 def progressaoAritmetica(a,b,r):
     maior = (a > b)
     menor = (a < b)
@@ -60,8 +59,8 @@ def progressaoAritmetica(a,b,r):
     else:
         print ("Os números digitados são iguais.")
 
-#Dividir um número dado por 2 até que o mesmo seja maior que 0
-#Divide a number by 2 until it's bigger then 0
+
+#  6 - Divide a number by 2 until it's bigger then 0
 def dividePor2(quociente):
     contador = 0
 
@@ -70,8 +69,8 @@ def dividePor2(quociente):
         contador += 1
     return contador
 
-#Dada um lista de números fornecidos pelo usuário, imprimir a média aritmética entre os números
-#Given a list of number, print de arithmetic avarege
+
+#  7 - Given a list of number, print de arithmetic avarege
 def mediaAritmetica():
     soma = 0
     contador = 0
@@ -85,12 +84,36 @@ def mediaAritmetica():
 
     return (soma/contador)
 
-#Dado um número, imprima o maior número quadrado menor que o número dado
-#Given an integer number, print the biggest square root number smaller then the given number
+
+#  8 - Given an integer number, print the biggest square root number smaller then the given number
 def maiorQuadrado(N):
     quadrado = 0
     for i in range (1, N+1):
         quadrado = (i*i) + i
         if quadrado >= N:
             return i * i
-            break
+
+
+#  9 - Ask the user to type letters until he types "Z" to stop and then print how many letter where typed
+def qntsLetras():
+    Letra = 0
+    cont = 0
+
+    while True:
+        Letra = input ("Digite uma letra ou Z para sair: ")
+        if Letra == "Z":
+            return cont
+        cont += 1
+
+
+#  10 - Ask the user to type letters until he types "Z" to stop and then print how many vogals where typed
+def qntsVogais():
+    Letra = 0
+    cont = 0
+
+    while True:
+        Letra = input("Digite uma letra ou Z para sair: ")
+        if Letra == "Z":
+            return cont
+        elif Letra == "a" or Letra == "e" or Letra == "i" or Letra == "o" or Letra == "u":
+            cont += 1
